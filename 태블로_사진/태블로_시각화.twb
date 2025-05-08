@@ -1,0 +1,3266 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.25.0208.0338                               -->
+<workbook original-version='18.1' source-build='2024.3.4 (20243.25.0208.0338)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1(korea_sido)' inline='true' name='federated.1dd1a7z0xcanct1d9li460lugpag' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='korea_sido' name='excel-direct.1fs7mgj0xnxaas1fue3tb1p4dway'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/hbi/Downloads/korea_sido.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1fs7mgj0xnxaas1fue3tb1p4dway' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:B150:no:A1:B150:0' header='yes' outcome='6'>
+            <column datatype='string' name='주소_시도' ordinal='0' />
+            <column datatype='integer' name='count' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B150:no:A1:B150:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>주소_시도</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[주소_시도]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>주소_시도</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_2DC8A335AAD4444AAB4C1131EF94FA76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_2DC8A335AAD4444AAB4C1131EF94FA76]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_2DC8A335AAD4444AAB4C1131EF94FA76]' role='measure' type='quantitative' />
+      <column caption='Count' datatype='integer' name='[count]' role='measure' type='quantitative' />
+      <column caption='주소 시도' datatype='string' name='[주소_시도]' role='dimension' type='nominal' />
+      <column-instance column='[주소_시도]' derivation='None' name='[none:주소_시도:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:주소_시도:nk]' palette='blue_10_0' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;충북 진천군&quot;</bucket>
+            </map>
+            <map to='#2a5783'>
+              <bucket>&quot;충북 청주시&quot;</bucket>
+            </map>
+            <map to='#2b5884'>
+              <bucket>&quot;충북 음성군&quot;</bucket>
+            </map>
+            <map to='#2c5985'>
+              <bucket>&quot;충남 천안시&quot;</bucket>
+            </map>
+            <map to='#2d5a86'>
+              <bucket>&quot;충남 아산시&quot;</bucket>
+            </map>
+            <map to='#2e5b87'>
+              <bucket>&quot;제주 제주시&quot;</bucket>
+            </map>
+            <map to='#2f5c88'>
+              <bucket>&quot;전북 전주시&quot;</bucket>
+            </map>
+            <map to='#305d89'>
+              <bucket>&quot;전북 익산시&quot;</bucket>
+            </map>
+            <map to='#315e8a'>
+              <bucket>&quot;전북 군산시&quot;</bucket>
+            </map>
+            <map to='#315e8b'>
+              <bucket>&quot;전남 화순군&quot;</bucket>
+            </map>
+            <map to='#325f8c'>
+              <bucket>&quot;전남 순천시&quot;</bucket>
+            </map>
+            <map to='#33608d'>
+              <bucket>&quot;전남 목포시&quot;</bucket>
+            </map>
+            <map to='#34618e'>
+              <bucket>&quot;전남 나주시&quot;</bucket>
+            </map>
+            <map to='#35628f'>
+              <bucket>&quot;전남 광양시&quot;</bucket>
+            </map>
+            <map to='#366390'>
+              <bucket>&quot;인천광역시 남동구&quot;</bucket>
+            </map>
+            <map to='#376491'>
+              <bucket>&quot;인천 중구&quot;</bucket>
+            </map>
+            <map to='#376492'>
+              <bucket>&quot;인천 연수구&quot;</bucket>
+            </map>
+            <map to='#386592'>
+              <bucket>&quot;인천 서구&quot;</bucket>
+            </map>
+            <map to='#396693'>
+              <bucket>&quot;인천 부평구&quot;</bucket>
+            </map>
+            <map to='#3a6794'>
+              <bucket>&quot;인천 미추홀구&quot;</bucket>
+            </map>
+            <map to='#3a6895'>
+              <bucket>&quot;인천 남동구&quot;</bucket>
+            </map>
+            <map to='#3b6996'>
+              <bucket>&quot;인천 계양구&quot;</bucket>
+            </map>
+            <map to='#3c6997'>
+              <bucket>&quot;울산 중구&quot;</bucket>
+            </map>
+            <map to='#3d6a98'>
+              <bucket>&quot;울산 울주군&quot;</bucket>
+            </map>
+            <map to='#3d6b99'>
+              <bucket>&quot;울산 북구&quot;</bucket>
+            </map>
+            <map to='#3e6c99'>
+              <bucket>&quot;울산 동구&quot;</bucket>
+            </map>
+            <map to='#3f6d9a'>
+              <bucket>&quot;울산 남구&quot;</bucket>
+            </map>
+            <map to='#406d9b'>
+              <bucket>&quot;세종특별자치시&quot;</bucket>
+            </map>
+            <map to='#406e9c'>
+              <bucket>&quot;세종시 조치원&quot;</bucket>
+            </map>
+            <map to='#416f9d'>
+              <bucket>&quot;세종 한누리대로&quot;</bucket>
+            </map>
+            <map to='#42709e'>
+              <bucket>&quot;세종 전의면&quot;</bucket>
+            </map>
+            <map to='#42719f'>
+              <bucket>&quot;세종 전동면&quot;</bucket>
+            </map>
+            <map to='#4372a0'>
+              <bucket>&quot;세종 아름서길&quot;</bucket>
+            </map>
+            <map to='#4472a0'>
+              <bucket>&quot;세종 대평로&quot;</bucket>
+            </map>
+            <map to='#4473a1'>
+              <bucket>&quot;세종 나성로&quot;</bucket>
+            </map>
+            <map to='#4574a2'>
+              <bucket>&quot;세종 가름로&quot;</bucket>
+            </map>
+            <map to='#4675a3'>
+              <bucket>&quot;서울특별시 종로구&quot;</bucket>
+            </map>
+            <map to='#4776a4'>
+              <bucket>&quot;서울특별시 용산구&quot;</bucket>
+            </map>
+            <map to='#4777a5'>
+              <bucket>&quot;서울특별시 영등포구&quot;</bucket>
+            </map>
+            <map to='#4878a6'>
+              <bucket>&quot;서울특별시 서초구&quot;</bucket>
+            </map>
+            <map to='#4979a7'>
+              <bucket>&quot;서울특별시 마포구&quot;</bucket>
+            </map>
+            <map to='#497aa8'>
+              <bucket>&quot;서울특별시 금천구&quot;</bucket>
+            </map>
+            <map to='#4a7aa8'>
+              <bucket>&quot;서울특별시 광진구&quot;</bucket>
+            </map>
+            <map to='#4b7ba9'>
+              <bucket>&quot;서울특별시 관악구&quot;</bucket>
+            </map>
+            <map to='#4b7caa'>
+              <bucket>&quot;서울특별시 강남구&quot;</bucket>
+            </map>
+            <map to='#4c7dab'>
+              <bucket>&quot;서울시 영등포구&quot;</bucket>
+            </map>
+            <map to='#4d7eac'>
+              <bucket>&quot;서울시 강동구&quot;</bucket>
+            </map>
+            <map to='#4e7fac'>
+              <bucket>&quot;서울 중랑구&quot;</bucket>
+            </map>
+            <map to='#4f80ad'>
+              <bucket>&quot;서울 중구&quot;</bucket>
+            </map>
+            <map to='#5081ae'>
+              <bucket>&quot;서울 종로구&quot;</bucket>
+            </map>
+            <map to='#5081af'>
+              <bucket>&quot;서울 용산구&quot;</bucket>
+            </map>
+            <map to='#5182af'>
+              <bucket>&quot;서울 영등포구&quot;</bucket>
+            </map>
+            <map to='#5283b0'>
+              <bucket>&quot;서울 양천구&quot;</bucket>
+            </map>
+            <map to='#5384b1'>
+              <bucket>&quot;서울 송파구&quot;</bucket>
+            </map>
+            <map to='#5485b2'>
+              <bucket>&quot;서울 성북구&quot;</bucket>
+            </map>
+            <map to='#5586b2'>
+              <bucket>&quot;서울 성동구&quot;</bucket>
+            </map>
+            <map to='#5687b3'>
+              <bucket>&quot;서울 서초구&quot;</bucket>
+            </map>
+            <map to='#5788b4'>
+              <bucket>&quot;서울 서대문구&quot;</bucket>
+            </map>
+            <map to='#5788b5'>
+              <bucket>&quot;서울 마포구&quot;</bucket>
+            </map>
+            <map to='#5889b5'>
+              <bucket>&quot;서울 동작구&quot;</bucket>
+            </map>
+            <map to='#598ab6'>
+              <bucket>&quot;서울 동대문구&quot;</bucket>
+            </map>
+            <map to='#5a8bb7'>
+              <bucket>&quot;서울 도봉구&quot;</bucket>
+            </map>
+            <map to='#5b8cb8'>
+              <bucket>&quot;서울 노원구&quot;</bucket>
+            </map>
+            <map to='#5c8db8'>
+              <bucket>&quot;서울 금천구&quot;</bucket>
+            </map>
+            <map to='#5d8eb9'>
+              <bucket>&quot;서울 구로구&quot;</bucket>
+            </map>
+            <map to='#5e8fba'>
+              <bucket>&quot;서울 광진구&quot;</bucket>
+            </map>
+            <map to='#5f90bb'>
+              <bucket>&quot;서울 관악구&quot;</bucket>
+            </map>
+            <map to='#6091bb'>
+              <bucket>&quot;서울 강서구&quot;</bucket>
+            </map>
+            <map to='#6192bc'>
+              <bucket>&quot;서울 강북구&quot;</bucket>
+            </map>
+            <map to='#6293bd'>
+              <bucket>&quot;서울 강동구&quot;</bucket>
+            </map>
+            <map to='#6394be'>
+              <bucket>&quot;서울 강남구&quot;</bucket>
+            </map>
+            <map to='#6495be'>
+              <bucket>&quot;부산광역시 사하구&quot;</bucket>
+            </map>
+            <map to='#6596bf'>
+              <bucket>&quot;부산 해운대구&quot;</bucket>
+            </map>
+            <map to='#6697c0'>
+              <bucket>&quot;부산 영도구&quot;</bucket>
+            </map>
+            <map to='#6798c1'>
+              <bucket>&quot;부산 수영구&quot;</bucket>
+            </map>
+            <map to='#6798c1'>
+              <bucket>&quot;부산 연제구&quot;</bucket>
+            </map>
+            <map to='#6899c2'>
+              <bucket>&quot;부산 사상구&quot;</bucket>
+            </map>
+            <map to='#699ac3'>
+              <bucket>&quot;부산 북구&quot;</bucket>
+            </map>
+            <map to='#6a9bc3'>
+              <bucket>&quot;부산 부산진구&quot;</bucket>
+            </map>
+            <map to='#6b9cc4'>
+              <bucket>&quot;부산 동래구&quot;</bucket>
+            </map>
+            <map to='#6c9dc5'>
+              <bucket>&quot;부산 동구&quot;</bucket>
+            </map>
+            <map to='#6d9ec6'>
+              <bucket>&quot;부산 남구&quot;</bucket>
+            </map>
+            <map to='#6e9fc6'>
+              <bucket>&quot;부산 기장군&quot;</bucket>
+            </map>
+            <map to='#6fa0c7'>
+              <bucket>&quot;부산 금정구&quot;</bucket>
+            </map>
+            <map to='#70a1c8'>
+              <bucket>&quot;부산 강서구&quot;</bucket>
+            </map>
+            <map to='#71a2c9'>
+              <bucket>&quot;대전광역시 동구&quot;</bucket>
+            </map>
+            <map to='#72a3c9'>
+              <bucket>&quot;대전 유성구&quot;</bucket>
+            </map>
+            <map to='#73a4ca'>
+              <bucket>&quot;대전 서구&quot;</bucket>
+            </map>
+            <map to='#74a5cb'>
+              <bucket>&quot;대전 동구&quot;</bucket>
+            </map>
+            <map to='#75a6cc'>
+              <bucket>&quot;대구 중구&quot;</bucket>
+            </map>
+            <map to='#76a7cc'>
+              <bucket>&quot;대구 수성구&quot;</bucket>
+            </map>
+            <map to='#77a7cd'>
+              <bucket>&quot;대구 북구&quot;</bucket>
+            </map>
+            <map to='#78a8ce'>
+              <bucket>&quot;대구 동구&quot;</bucket>
+            </map>
+            <map to='#78a9cf'>
+              <bucket>&quot;대구 달성군&quot;</bucket>
+            </map>
+            <map to='#79aacf'>
+              <bucket>&quot;대구 달서구&quot;</bucket>
+            </map>
+            <map to='#7aabd0'>
+              <bucket>&quot;대구 군위군&quot;</bucket>
+            </map>
+            <map to='#7bacd1'>
+              <bucket>&quot;광주광역시 동구&quot;</bucket>
+            </map>
+            <map to='#7cadd2'>
+              <bucket>&quot;광주 북구&quot;</bucket>
+            </map>
+            <map to='#7daed2'>
+              <bucket>&quot;광주 동구&quot;</bucket>
+            </map>
+            <map to='#7eaed3'>
+              <bucket>&quot;광주 광산구&quot;</bucket>
+            </map>
+            <map to='#7fafd4'>
+              <bucket>&quot;경상북도 구미시&quot;</bucket>
+            </map>
+            <map to='#80b0d5'>
+              <bucket>&quot;경북 포항시&quot;</bucket>
+            </map>
+            <map to='#81b1d5'>
+              <bucket>&quot;경북 영천시&quot;</bucket>
+            </map>
+            <map to='#82b2d6'>
+              <bucket>&quot;경북 구미시&quot;</bucket>
+            </map>
+            <map to='#83b3d7'>
+              <bucket>&quot;경북 경산시&quot;</bucket>
+            </map>
+            <map to='#84b4d7'>
+              <bucket>&quot;경남 창원시&quot;</bucket>
+            </map>
+            <map to='#85b5d8'>
+              <bucket>&quot;경남 진주시&quot;</bucket>
+            </map>
+            <map to='#86b6d9'>
+              <bucket>&quot;경남 성남시&quot;</bucket>
+            </map>
+            <map to='#88b7d9'>
+              <bucket>&quot;경남 밀양시&quot;</bucket>
+            </map>
+            <map to='#89b8da'>
+              <bucket>&quot;경남 김해시&quot;</bucket>
+            </map>
+            <map to='#8ab9db'>
+              <bucket>&quot;경기도 화성시&quot;</bucket>
+            </map>
+            <map to='#8bbadc'>
+              <bucket>&quot;경기도 하남시&quot;</bucket>
+            </map>
+            <map to='#8cbbdc'>
+              <bucket>&quot;경기도 평택시&quot;</bucket>
+            </map>
+            <map to='#8dbcdd'>
+              <bucket>&quot;경기도 용인시&quot;</bucket>
+            </map>
+            <map to='#8ebdde'>
+              <bucket>&quot;경기도 양주시&quot;</bucket>
+            </map>
+            <map to='#90bede'>
+              <bucket>&quot;경기도 시흥시&quot;</bucket>
+            </map>
+            <map to='#91bfdf'>
+              <bucket>&quot;경기도 성남시&quot;</bucket>
+            </map>
+            <map to='#92c0e0'>
+              <bucket>&quot;경기도 부천시&quot;</bucket>
+            </map>
+            <map to='#93c1e0'>
+              <bucket>&quot;경기도 남양주시&quot;</bucket>
+            </map>
+            <map to='#94c2e1'>
+              <bucket>&quot;경기도 김포시&quot;</bucket>
+            </map>
+            <map to='#95c3e1'>
+              <bucket>&quot;경기도 과천시&quot;</bucket>
+            </map>
+            <map to='#97c4e2'>
+              <bucket>&quot;경기 화성시&quot;</bucket>
+            </map>
+            <map to='#98c5e3'>
+              <bucket>&quot;경기 하남시&quot;</bucket>
+            </map>
+            <map to='#99c6e3'>
+              <bucket>&quot;경기 평택시&quot;</bucket>
+            </map>
+            <map to='#9ac7e4'>
+              <bucket>&quot;경기 파주시&quot;</bucket>
+            </map>
+            <map to='#9cc8e5'>
+              <bucket>&quot;경기 이천시&quot;</bucket>
+            </map>
+            <map to='#9dc9e5'>
+              <bucket>&quot;경기 의정부시&quot;</bucket>
+            </map>
+            <map to='#9ecae6'>
+              <bucket>&quot;경기 의왕시&quot;</bucket>
+            </map>
+            <map to='#9fcbe6'>
+              <bucket>&quot;경기 용인시&quot;</bucket>
+            </map>
+            <map to='#a0cce7'>
+              <bucket>&quot;경기 오산시&quot;</bucket>
+            </map>
+            <map to='#a2cce8'>
+              <bucket>&quot;경기 안양시&quot;</bucket>
+            </map>
+            <map to='#a3cde8'>
+              <bucket>&quot;경기 안성시&quot;</bucket>
+            </map>
+            <map to='#a4cee9'>
+              <bucket>&quot;경기 안산시&quot;</bucket>
+            </map>
+            <map to='#a5cfe9'>
+              <bucket>&quot;경기 시흥시&quot;</bucket>
+            </map>
+            <map to='#a7d0ea'>
+              <bucket>&quot;경기 수원시&quot;</bucket>
+            </map>
+            <map to='#a8d1ea'>
+              <bucket>&quot;경기 성남시&quot;</bucket>
+            </map>
+            <map to='#a9d2eb'>
+              <bucket>&quot;경기 부천시&quot;</bucket>
+            </map>
+            <map to='#aad3eb'>
+              <bucket>&quot;경기 남양주시&quot;</bucket>
+            </map>
+            <map to='#acd4ec'>
+              <bucket>&quot;경기 김포시&quot;</bucket>
+            </map>
+            <map to='#add5ec'>
+              <bucket>&quot;경기 군포시&quot;</bucket>
+            </map>
+            <map to='#aed5ed'>
+              <bucket>&quot;경기 구리시&quot;</bucket>
+            </map>
+            <map to='#b0d6ed'>
+              <bucket>&quot;경기 광주시&quot;</bucket>
+            </map>
+            <map to='#b1d7ee'>
+              <bucket>&quot;경기 광명시&quot;</bucket>
+            </map>
+            <map to='#b2d8ee'>
+              <bucket>&quot;경기 과천시&quot;</bucket>
+            </map>
+            <map to='#b3d9ef'>
+              <bucket>&quot;경기 고양시&quot;</bucket>
+            </map>
+            <map to='#b5daef'>
+              <bucket>&quot;강원도 인제군&quot;</bucket>
+            </map>
+            <map to='#b6dbf0'>
+              <bucket>&quot;강원 횡성군&quot;</bucket>
+            </map>
+            <map to='#b7dcf0'>
+              <bucket>&quot;강원 춘천시&quot;</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>&quot;강원 원주시&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_2DC8A335AAD4444AAB4C1131EF94FA76'>
+            <properties context=''>
+              <relation connection='excel-direct.1fs7mgj0xnxaas1fue3tb1p4dway' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:B150:no:A1:B150:0' header='yes' outcome='6'>
+                  <column datatype='string' name='주소_시도' ordinal='0' />
+                  <column datatype='integer' name='count' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Sheet1(company_info (1))' inline='true' name='federated.1qhxzvu0cweqos1e2j8aj0hb028v' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='company_info (1)' name='excel-direct.012h4eh1ltsujf1c2xtgh1avhhs1'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/hbi/Downloads/company_info (1).xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.012h4eh1ltsujf1c2xtgh1avhhs1' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:P1770:no:A1:P1770:0' header='yes' outcome='6'>
+            <column datatype='string' name='기업명' ordinal='0' />
+            <column datatype='string' name='설립연차_지울거' ordinal='1' />
+            <column datatype='string' name='기업규모' ordinal='2' />
+            <column datatype='string' name='설립연도' ordinal='3' />
+            <column datatype='string' name='업종' ordinal='4' />
+            <column datatype='string' name='본사_주소' ordinal='5' />
+            <column datatype='string' name='최저_연봉' ordinal='6' />
+            <column datatype='string' name='최고_연봉' ordinal='7' />
+            <column datatype='string' name='평균_연봉' ordinal='8' />
+            <column datatype='integer' name='년도' ordinal='9' />
+            <column datatype='string' name='Unnamed: 10' ordinal='10' />
+            <column datatype='string' name='광역시도' ordinal='11' />
+            <column datatype='string' name='구' ordinal='12' />
+            <column datatype='integer' name='설립연차' ordinal='13' />
+            <column datatype='string' name='단위별_설립연차' ordinal='14' />
+            <column datatype='string' name='업종_분류' ordinal='15' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:P1770:no:A1:P1770:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>기업명</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[기업명]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>기업명</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_374C37F65E0D42CA93B192AA64F3180B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>설립연차_지울거</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[설립연차_지울거]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>설립연차_지울거</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_374C37F65E0D42CA93B192AA64F3180B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>기업규모</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[기업규모]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>기업규모</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_374C37F65E0D42CA93B192AA64F3180B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>설립연도</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[설립연도]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>설립연도</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_374C37F65E0D42CA93B192AA64F3180B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>업종</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[업종]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>업종</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_374C37F65E0D42CA93B192AA64F3180B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>본사_주소</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[본사_주소]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>본사_주소</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_374C37F65E0D42CA93B192AA64F3180B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>최저_연봉</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[최저_연봉]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>최저_연봉</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_374C37F65E0D42CA93B192AA64F3180B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>최고_연봉</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[최고_연봉]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>최고_연봉</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_374C37F65E0D42CA93B192AA64F3180B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>평균_연봉</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[평균_연봉]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>평균_연봉</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_374C37F65E0D42CA93B192AA64F3180B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>년도</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[년도]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>년도</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_374C37F65E0D42CA93B192AA64F3180B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unnamed: 10</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Unnamed: 10]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Unnamed: 10</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_374C37F65E0D42CA93B192AA64F3180B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>광역시도</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[광역시도]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>광역시도</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_374C37F65E0D42CA93B192AA64F3180B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>구</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[구]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>구</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_374C37F65E0D42CA93B192AA64F3180B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>설립연차</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[설립연차]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>설립연차</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_374C37F65E0D42CA93B192AA64F3180B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>단위별_설립연차</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[단위별_설립연차]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>단위별_설립연차</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_374C37F65E0D42CA93B192AA64F3180B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>업종_분류</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[업종_분류]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>업종_분류</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_374C37F65E0D42CA93B192AA64F3180B]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_374C37F65E0D42CA93B192AA64F3180B]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[년도]' role='dimension' type='quantitative' />
+      <column caption='단위별 설립연차' datatype='string' name='[단위별_설립연차]' role='dimension' type='nominal' />
+      <column caption='본사 주소' datatype='string' name='[본사_주소]' role='dimension' type='nominal' />
+      <column caption='설립연차 지울거' datatype='string' name='[설립연차_지울거]' role='dimension' type='nominal' />
+      <column caption='업종 분류' datatype='string' name='[업종_분류]' role='dimension' type='nominal' />
+      <column caption='최고 연봉' datatype='string' name='[최고_연봉]' role='dimension' type='nominal' />
+      <column caption='최저 연봉' datatype='string' name='[최저_연봉]' role='dimension' type='nominal' />
+      <column caption='평균 연봉' datatype='string' name='[평균_연봉]' role='dimension' type='nominal' />
+      <column-instance column='[업종_분류]' derivation='None' name='[none:업종_분류:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:업종_분류:nk]' type='palette'>
+            <map to='#90ee90'>
+              <bucket>&quot;그 외&quot;</bucket>
+            </map>
+            <map to='#ff8c8c'>
+              <bucket>&quot;IT업종&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_374C37F65E0D42CA93B192AA64F3180B'>
+            <properties context=''>
+              <relation connection='excel-direct.012h4eh1ltsujf1c2xtgh1avhhs1' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:P1770:no:A1:P1770:0' header='yes' outcome='6'>
+                  <column datatype='string' name='기업명' ordinal='0' />
+                  <column datatype='string' name='설립연차_지울거' ordinal='1' />
+                  <column datatype='string' name='기업규모' ordinal='2' />
+                  <column datatype='string' name='설립연도' ordinal='3' />
+                  <column datatype='string' name='업종' ordinal='4' />
+                  <column datatype='string' name='본사_주소' ordinal='5' />
+                  <column datatype='string' name='최저_연봉' ordinal='6' />
+                  <column datatype='string' name='최고_연봉' ordinal='7' />
+                  <column datatype='string' name='평균_연봉' ordinal='8' />
+                  <column datatype='integer' name='년도' ordinal='9' />
+                  <column datatype='string' name='Unnamed: 10' ordinal='10' />
+                  <column datatype='string' name='광역시도' ordinal='11' />
+                  <column datatype='string' name='구' ordinal='12' />
+                  <column datatype='integer' name='설립연차' ordinal='13' />
+                  <column datatype='string' name='단위별_설립연차' ordinal='14' />
+                  <column datatype='string' name='업종_분류' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Sheet1(year_of_establishment_company)' inline='true' name='federated.1dnmbal0ouibn20zq52570cv0qeo' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='year_of_establishment_company' name='excel-direct.1hrbt9q1ocpq8x16zhhpm1wrv23e'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/hbi/Downloads/year_of_establishment_company.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1hrbt9q1ocpq8x16zhhpm1wrv23e' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:B6:no:A1:B6:0' header='yes' outcome='6'>
+            <column datatype='string' name='단위별_설립연차' ordinal='0' />
+            <column datatype='integer' name='count' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B6:no:A1:B6:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>단위별_설립연차</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[단위별_설립연차]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>단위별_설립연차</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_5082EE47F1364867AA955CF91CD33913]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_5082EE47F1364867AA955CF91CD33913]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_5082EE47F1364867AA955CF91CD33913]' role='measure' type='quantitative' />
+      <column caption='Count' datatype='integer' name='[count]' role='measure' type='quantitative' />
+      <column caption='단위별 설립연차' datatype='string' name='[단위별_설립연차]' role='dimension' type='nominal' />
+      <column-instance column='[단위별_설립연차]' derivation='None' name='[none:단위별_설립연차:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:단위별_설립연차:nk]' palette='tableau-10-medium' type='palette'>
+            <map to='#67bf5c'>
+              <bucket>&quot;20년이하&quot;</bucket>
+            </map>
+            <map to='#729ece'>
+              <bucket>&quot;5년이하&quot;</bucket>
+            </map>
+            <map to='#ad8bc9'>
+              <bucket>&quot;30년이하&quot;</bucket>
+            </map>
+            <map to='#ed665d'>
+              <bucket>&quot;30년이상&quot;</bucket>
+            </map>
+            <map to='#ff9e4a'>
+              <bucket>&quot;10년이하&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_5082EE47F1364867AA955CF91CD33913'>
+            <properties context=''>
+              <relation connection='excel-direct.1hrbt9q1ocpq8x16zhhpm1wrv23e' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:B6:no:A1:B6:0' header='yes' outcome='6'>
+                  <column datatype='string' name='단위별_설립연차' ordinal='0' />
+                  <column datatype='integer' name='count' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Sheet1(history_df)' inline='true' name='federated.1udk58k1nulwbh10bttwe12sq179' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='history_df' name='excel-direct.0snackq19nb6sh1aztpfj1ntqdgb'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/hbi/Documents/KDT/크롤링_팀플/history_df.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0snackq19nb6sh1aztpfj1ntqdgb' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:B4:no:A1:B4:0' header='yes' outcome='6'>
+            <column datatype='string' name='경력' ordinal='0' />
+            <column datatype='integer' name='count' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B4:no:A1:B4:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>경력</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[경력]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>경력</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_73A172E8392A4EAC8F6664651582C216]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_73A172E8392A4EAC8F6664651582C216]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_73A172E8392A4EAC8F6664651582C216]' role='measure' type='quantitative' />
+      <column caption='Count' datatype='integer' name='[count]' role='measure' type='quantitative' />
+      <column datatype='string' name='[경력]' role='dimension' type='nominal' />
+      <column-instance column='[경력]' derivation='None' name='[none:경력:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:경력:nk]' type='palette'>
+            <map to='#680000'>
+              <bucket>&quot;경력직&quot;</bucket>
+            </map>
+            <map to='#ffb44c'>
+              <bucket>&quot;중고신입&quot;</bucket>
+            </map>
+            <map to='#ffff00'>
+              <bucket>&quot;신입&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_73A172E8392A4EAC8F6664651582C216'>
+            <properties context=''>
+              <relation connection='excel-direct.0snackq19nb6sh1aztpfj1ntqdgb' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:B4:no:A1:B4:0' header='yes' outcome='6'>
+                  <column datatype='string' name='경력' ordinal='0' />
+                  <column datatype='integer' name='count' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Sheet1(keyword_top10)' inline='true' name='federated.0fub4i70htv2pn11qns6l0kskn68' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='keyword_top10' name='excel-direct.0g9mn8x06vfdl11a1uw3r1kvp97v'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/hbi/Documents/KDT/크롤링_팀플/keyword_top10.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0g9mn8x06vfdl11a1uw3r1kvp97v' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:C11:no:A1:C11:0' header='yes' outcome='6'>
+            <column datatype='string' name='keyword' ordinal='0' />
+            <column datatype='integer' name='count' ordinal='1' />
+            <column datatype='string' name='건수' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C11:no:A1:C11:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>keyword</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[keyword]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>keyword</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_2E88A1FB5D30492F8EA6958D4EE45FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_2E88A1FB5D30492F8EA6958D4EE45FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>건수</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[건수]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>건수</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_2E88A1FB5D30492F8EA6958D4EE45FEA]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_2E88A1FB5D30492F8EA6958D4EE45FEA]' role='measure' type='quantitative' />
+      <column caption='Count' datatype='integer' name='[count]' role='measure' type='quantitative' />
+      <column caption='Keyword' datatype='string' name='[keyword]' role='dimension' type='nominal' />
+      <column-instance column='[keyword]' derivation='None' name='[none:keyword:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:keyword:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot; 데이터시각화&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot; 백엔드/서버개발&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot; 머신러닝&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot; Python&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot; 웹개발&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;연구원&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot; 딥러닝&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot; 빅데이터&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot; 데이터엔지니어&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot; AI(인공지능)&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_2E88A1FB5D30492F8EA6958D4EE45FEA'>
+            <properties context=''>
+              <relation connection='excel-direct.0g9mn8x06vfdl11a1uw3r1kvp97v' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:C11:no:A1:C11:0' header='yes' outcome='6'>
+                  <column datatype='string' name='keyword' ordinal='0' />
+                  <column datatype='integer' name='count' ordinal='1' />
+                  <column datatype='string' name='건수' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Sheet1(job_info (1))' inline='true' name='federated.1x846420exkfjj11e0iar10chhp5' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='job_info (1)' name='excel-direct.1ycy7vr0cyfq3h169nvnl0w0mk0q'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/hbi/Downloads/job_info (1).xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1ycy7vr0cyfq3h169nvnl0w0mk0q' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:H1881:no:A1:H1881:0' header='yes' outcome='6'>
+            <column datatype='string' name='기업명' ordinal='0' />
+            <column datatype='string' name='기업공고' ordinal='1' />
+            <column datatype='string' name='지원방법' ordinal='2' />
+            <column datatype='string' name='직업 관련' ordinal='3' />
+            <column datatype='string' name='지역' ordinal='4' />
+            <column datatype='string' name='경력' ordinal='5' />
+            <column datatype='string' name='학위' ordinal='6' />
+            <column datatype='string' name='정규직 유무' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:H1881:no:A1:H1881:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>기업명</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[기업명]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>기업명</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_98E9C9B15EFD42139908DFE95B79C145]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>기업공고</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[기업공고]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>기업공고</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_98E9C9B15EFD42139908DFE95B79C145]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>지원방법</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[지원방법]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>지원방법</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_98E9C9B15EFD42139908DFE95B79C145]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>직업 관련</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[직업 관련]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>직업 관련</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_98E9C9B15EFD42139908DFE95B79C145]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>지역</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[지역]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>지역</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_98E9C9B15EFD42139908DFE95B79C145]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>경력</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[경력]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>경력</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_98E9C9B15EFD42139908DFE95B79C145]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>학위</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[학위]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>학위</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_98E9C9B15EFD42139908DFE95B79C145]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>정규직 유무</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[정규직 유무]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>정규직 유무</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_98E9C9B15EFD42139908DFE95B79C145]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_98E9C9B15EFD42139908DFE95B79C145]' role='measure' type='quantitative' />
+      <column aggregation='CountD' caption='학위(복사본)' datatype='integer' datatype-customized='true' name='[학위(복사본)_1270859579155181581]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='INT([학위])' />
+      </column>
+      <column aggregation='CountD' datatype='string' name='[학위]' role='dimension' type='nominal' />
+      <column-instance column='[학위]' derivation='Attribute' name='[attr:학위:nk]' pivot='key' type='nominal' />
+      <column-instance column='[학위]' derivation='Count' name='[cnt:학위:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[학위]' derivation='Max' name='[max:학위:nk]' pivot='key' type='nominal' />
+      <column-instance column='[학위]' derivation='None' name='[none:학위:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[max:학위:nk]' palette='tableau-20' type='palette'>
+            <map to='#1f77b4'>
+              <bucket>&quot;고졸이상&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;학력무관&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;대졸이상&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;석,박사&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;초대졸이상&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[attr:학위:nk]' palette='nuriel_stone_10_0' type='palette'>
+            <map to='#31a1b3'>
+              <bucket>&quot;석,박사&quot;</bucket>
+            </map>
+            <map to='#6fb899'>
+              <bucket>&quot;대졸이상&quot;</bucket>
+            </map>
+            <map to='#8175aa'>
+              <bucket>&quot;고졸이상&quot;</bucket>
+            </map>
+            <map to='#a39fc9'>
+              <bucket>&quot;학력무관&quot;</bucket>
+            </map>
+            <map to='#ccb22b'>
+              <bucket>&quot;초대졸이상&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[cnt:학위:ok]' palette='jewel_bright_10_0' type='palette'>
+            <map to='#004a94'>
+              <bucket>803</bucket>
+            </map>
+            <map to='#0066cc'>
+              <bucket>531</bucket>
+            </map>
+            <map to='#3399ff'>
+              <bucket>335</bucket>
+            </map>
+            <map to='#66b3ff'>
+              <bucket>119</bucket>
+            </map>
+            <map to='#99ccff'>
+              <bucket>92</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:학위:nk]' palette='nuriel_stone_10_0' type='palette'>
+            <map to='#6a0dad'>
+              <bucket>&quot;대졸이상&quot;</bucket>
+            </map>
+            <map to='#8a2be2'>
+              <bucket>&quot;학력무관&quot;</bucket>
+            </map>
+            <map to='#a9a9a9'>
+              <bucket>&quot;고졸이상&quot;</bucket>
+            </map>
+            <map to='#ba55d3'>
+              <bucket>&quot;초대졸이상&quot;</bucket>
+            </map>
+            <map to='#d8bfd8'>
+              <bucket>&quot;석,박사&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_98E9C9B15EFD42139908DFE95B79C145'>
+            <properties context=''>
+              <relation connection='excel-direct.1ycy7vr0cyfq3h169nvnl0w0mk0q' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:H1881:no:A1:H1881:0' header='yes' outcome='6'>
+                  <column datatype='string' name='기업명' ordinal='0' />
+                  <column datatype='string' name='기업공고' ordinal='1' />
+                  <column datatype='string' name='지원방법' ordinal='2' />
+                  <column datatype='string' name='직업 관련' ordinal='3' />
+                  <column datatype='string' name='지역' ordinal='4' />
+                  <column datatype='string' name='경력' ordinal='5' />
+                  <column datatype='string' name='학위' ordinal='6' />
+                  <column datatype='string' name='정규직 유무' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Sheet1(com_count)' inline='true' name='federated.1chyiw50ygyazu13w4ut4095ty4e' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='com_count' name='excel-direct.0i6nvmi1ii3cxm1do4w3c096tosk'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/hbi/Documents/KDT/크롤링_팀플/com_count.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0i6nvmi1ii3cxm1do4w3c096tosk' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:B5:no:A1:B5:0' header='yes' outcome='6'>
+            <column datatype='string' name='기업규모' ordinal='0' />
+            <column datatype='integer' name='기업명' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B5:no:A1:B5:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>기업규모</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[기업규모]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>기업규모</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_D7CCF64891484810AD0C2B5D9E02D06C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>기업명</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[기업명]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>기업명</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_D7CCF64891484810AD0C2B5D9E02D06C]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_D7CCF64891484810AD0C2B5D9E02D06C]' role='measure' type='quantitative' />
+      <column datatype='string' name='[기업규모]' role='dimension' type='nominal' />
+      <column caption='기업명(복사본)' datatype='string' datatype-customized='true' name='[기업명(복사본)_1270859579164000270]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='STR([기업명])' />
+      </column>
+      <column datatype='integer' name='[기업명]' role='measure' type='quantitative' />
+      <column-instance column='[기업규모]' derivation='None' name='[none:기업규모:nk]' pivot='key' type='nominal' />
+      <column-instance column='[기업명]' derivation='Sum' name='[pcto:sum:기업명:qk:1]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='[federated.1chyiw50ygyazu13w4ut4095ty4e].[none:기업규모:nk]' ordering-type='Field' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[기업명]' derivation='Sum' name='[sum:기업명:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1chyiw50ygyazu13w4ut4095ty4e].[pcto:sum:기업명:qk:1]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1chyiw50ygyazu13w4ut4095ty4e].[sum:Calculation_1270859579140055044:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1chyiw50ygyazu13w4ut4095ty4e].[sum:Calculation_1270859579140046850:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1chyiw50ygyazu13w4ut4095ty4e].[sum:기업명:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_D7CCF64891484810AD0C2B5D9E02D06C'>
+            <properties context=''>
+              <relation connection='excel-direct.0i6nvmi1ii3cxm1do4w3c096tosk' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:B5:no:A1:B5:0' header='yes' outcome='6'>
+                  <column datatype='string' name='기업규모' ordinal='0' />
+                  <column datatype='integer' name='기업명' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='설립연차별 채용 기업 수'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1(year_of_establishment_company)' name='federated.1dnmbal0ouibn20zq52570cv0qeo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dnmbal0ouibn20zq52570cv0qeo'>
+            <column caption='Count' datatype='integer' name='[count]' role='measure' type='quantitative' />
+            <column-instance column='[단위별_설립연차]' derivation='None' name='[none:단위별_설립연차:nk]' pivot='key' type='nominal' />
+            <column-instance column='[count]' derivation='Sum' name='[pcto:sum:count:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[count]' derivation='Sum' name='[sum:count:qk]' pivot='key' type='quantitative' />
+            <column caption='단위별 설립연차' datatype='string' name='[단위별_설립연차]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1dnmbal0ouibn20zq52570cv0qeo].[none:단위별_설립연차:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;5년이하&quot;</bucket>
+              <bucket>&quot;10년이하&quot;</bucket>
+              <bucket>&quot;20년이하&quot;</bucket>
+              <bucket>&quot;30년이하&quot;</bucket>
+              <bucket>&quot;30년이상&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='auto-subtitle' class='0' field='[federated.1dnmbal0ouibn20zq52570cv0qeo].[sum:count:qk]' scope='rows' value='true' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1dnmbal0ouibn20zq52570cv0qeo].[none:단위별_설립연차:nk]' />
+              <text column='[federated.1dnmbal0ouibn20zq52570cv0qeo].[none:단위별_설립연차:nk]' />
+              <text column='[federated.1dnmbal0ouibn20zq52570cv0qeo].[pcto:sum:count:qk]' />
+              <text column='[federated.1dnmbal0ouibn20zq52570cv0qeo].[sum:count:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#4e79a7' fontsize='18'><![CDATA[<[federated.1dnmbal0ouibn20zq52570cv0qeo].[none:단위별_설립연차:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontsize='15'><![CDATA[<[federated.1dnmbal0ouibn20zq52570cv0qeo].[pcto:sum:count:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontsize='15'><![CDATA[<[federated.1dnmbal0ouibn20zq52570cv0qeo].[sum:count:qk]> 개]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='10' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='173' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1dnmbal0ouibn20zq52570cv0qeo].[sum:count:qk]</rows>
+        <cols>[federated.1dnmbal0ouibn20zq52570cv0qeo].[none:단위별_설립연차:nk]</cols>
+      </table>
+      <simple-id uuid='{0EE1B67A-4DEF-4193-97AB-321197B3FA60}' />
+    </worksheet>
+    <worksheet name='채용 경력 건수'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1(history_df)' name='federated.1udk58k1nulwbh10bttwe12sq179' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1udk58k1nulwbh10bttwe12sq179'>
+            <column caption='Count' datatype='integer' name='[count]' role='measure' type='quantitative' />
+            <column-instance column='[경력]' derivation='None' name='[none:경력:nk]' pivot='key' type='nominal' />
+            <column-instance column='[count]' derivation='Sum' name='[pcto:sum:count:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[count]' derivation='Sum' name='[sum:count:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[경력]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.1udk58k1nulwbh10bttwe12sq179].[none:경력:nk]' direction='ASC' using='[federated.1udk58k1nulwbh10bttwe12sq179].[sum:count:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.1udk58k1nulwbh10bttwe12sq179].[none:경력:nk]' />
+              <wedge-size column='[federated.1udk58k1nulwbh10bttwe12sq179].[sum:count:qk]' />
+              <size column='[federated.1udk58k1nulwbh10bttwe12sq179].[sum:count:qk]' />
+              <text column='[federated.1udk58k1nulwbh10bttwe12sq179].[none:경력:nk]' />
+              <text column='[federated.1udk58k1nulwbh10bttwe12sq179].[sum:count:qk]' />
+              <text column='[federated.1udk58k1nulwbh10bttwe12sq179].[pcto:sum:count:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.1udk58k1nulwbh10bttwe12sq179].[none:경력:nk]</run>
+                <run>&gt;&#10;&lt;</run>
+                <run>[federated.1udk58k1nulwbh10bttwe12sq179].[sum:count:qk]</run>
+                <run>&gt; 건&#10;&lt;</run>
+                <run>[federated.1udk58k1nulwbh10bttwe12sq179].[pcto:sum:count:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{05827838-BF70-4A4A-88AE-49D2474252B4}' />
+    </worksheet>
+    <worksheet name='채용 기업규모 수'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1(com_count)' name='federated.1chyiw50ygyazu13w4ut4095ty4e' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1chyiw50ygyazu13w4ut4095ty4e'>
+            <column-instance column='[기업규모]' derivation='None' name='[none:기업규모:nk]' pivot='key' type='nominal' />
+            <column-instance column='[기업명]' derivation='Sum' name='[pcto:sum:기업명:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[기업명]' derivation='Sum' name='[sum:기업명:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[기업규모]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[기업명]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1chyiw50ygyazu13w4ut4095ty4e].[none:기업규모:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1chyiw50ygyazu13w4ut4095ty4e].[sum:기업명:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1chyiw50ygyazu13w4ut4095ty4e].[pcto:sum:기업명:qk]' palette='purple_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1chyiw50ygyazu13w4ut4095ty4e].[pcto:sum:기업명:qk]' />
+              <text column='[federated.1chyiw50ygyazu13w4ut4095ty4e].[none:기업규모:nk]' />
+              <text column='[federated.1chyiw50ygyazu13w4ut4095ty4e].[pcto:sum:기업명:qk]' />
+              <text column='[federated.1chyiw50ygyazu13w4ut4095ty4e].[sum:기업명:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#4e79a7' fontsize='20'><![CDATA[<[federated.1chyiw50ygyazu13w4ut4095ty4e].[none:기업규모:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='16'><![CDATA[<[federated.1chyiw50ygyazu13w4ut4095ty4e].[sum:기업명:qk]> 건]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='16'><![CDATA[<[federated.1chyiw50ygyazu13w4ut4095ty4e].[pcto:sum:기업명:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1chyiw50ygyazu13w4ut4095ty4e].[sum:기업명:qk]</rows>
+        <cols>[federated.1chyiw50ygyazu13w4ut4095ty4e].[none:기업규모:nk]</cols>
+      </table>
+      <simple-id uuid='{CED860A4-9004-4CA5-B8C6-3B679AE02A92}' />
+    </worksheet>
+    <worksheet name='채용 별 관련 IT업종 유무'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1(company_info (1))' name='federated.1qhxzvu0cweqos1e2j8aj0hb028v' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1qhxzvu0cweqos1e2j8aj0hb028v'>
+            <column-instance column='[업종_분류]' derivation='Count' name='[cnt:업종_분류:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[업종_분류]' derivation='None' name='[none:업종_분류:nk]' pivot='key' type='nominal' />
+            <column-instance column='[업종_분류]' derivation='Count' name='[pcto:cnt:업종_분류:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='업종 분류' datatype='string' name='[업종_분류]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1qhxzvu0cweqos1e2j8aj0hb028v].[cnt:업종_분류:qk]' palette='tableau-orange-blue-light' type='interpolated' />
+            <encoding attr='color' field='[federated.1qhxzvu0cweqos1e2j8aj0hb028v].[pcto:cnt:업종_분류:qk]' palette='tableau-orange-blue-light' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.1qhxzvu0cweqos1e2j8aj0hb028v].[none:업종_분류:nk]' />
+              <wedge-size column='[federated.1qhxzvu0cweqos1e2j8aj0hb028v].[cnt:업종_분류:qk]' />
+              <size column='[federated.1qhxzvu0cweqos1e2j8aj0hb028v].[cnt:업종_분류:qk]' />
+              <text column='[federated.1qhxzvu0cweqos1e2j8aj0hb028v].[none:업종_분류:nk]' />
+              <text column='[federated.1qhxzvu0cweqos1e2j8aj0hb028v].[pcto:cnt:업종_분류:qk]' />
+              <text column='[federated.1qhxzvu0cweqos1e2j8aj0hb028v].[cnt:업종_분류:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='13'><![CDATA[<[federated.1qhxzvu0cweqos1e2j8aj0hb028v].[none:업종_분류:nk]> ]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='13'><![CDATA[<[federated.1qhxzvu0cweqos1e2j8aj0hb028v].[cnt:업종_분류:qk]> 건]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='13'><![CDATA[<[federated.1qhxzvu0cweqos1e2j8aj0hb028v].[pcto:cnt:업종_분류:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8143D98C-4536-4C90-901A-6683FF52FE0B}' />
+    </worksheet>
+    <worksheet name='채용 별 최소 조건'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1(job_info (1))' name='federated.1x846420exkfjj11e0iar10chhp5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1x846420exkfjj11e0iar10chhp5'>
+            <column caption='1' datatype='integer' name='[Calculation_1270859579141234698]' role='measure' type='quantitative' user:unnamed='시트 10'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='1' datatype='integer' name='[Calculation_1270859579141246988]' role='measure' type='quantitative' user:unnamed='시트 10'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[학위]' derivation='Count' name='[cnt:학위:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1270859579141234698]' derivation='None' name='[none:Calculation_1270859579141234698:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1270859579141246988]' derivation='None' name='[none:Calculation_1270859579141246988:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[학위]' derivation='None' name='[none:학위:nk]' pivot='key' type='nominal' />
+            <column-instance column='[학위]' derivation='Count' name='[pcto:cnt:학위:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column aggregation='CountD' datatype='string' name='[학위]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.1x846420exkfjj11e0iar10chhp5].[none:학위:nk]' direction='ASC' using='[federated.1x846420exkfjj11e0iar10chhp5].[cnt:학위:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1x846420exkfjj11e0iar10chhp5].[none:Calculation_1270859579141246988:qk]' field-type='quantitative' fold='true' scope='cols' type='space' />
+            <format attr='display' class='0' field='[federated.1x846420exkfjj11e0iar10chhp5].[none:Calculation_1270859579141246988:qk]' scope='cols' value='false' />
+            <format attr='display' class='0' field='[federated.1x846420exkfjj11e0iar10chhp5].[none:Calculation_1270859579141234698:qk]' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <text column='[federated.1x846420exkfjj11e0iar10chhp5].[cnt:학위:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1x846420exkfjj11e0iar10chhp5].[none:Calculation_1270859579141234698:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1x846420exkfjj11e0iar10chhp5].[none:학위:nk]' />
+              <wedge-size column='[federated.1x846420exkfjj11e0iar10chhp5].[cnt:학위:qk]' />
+              <text column='[federated.1x846420exkfjj11e0iar10chhp5].[none:학위:nk]' />
+              <text column='[federated.1x846420exkfjj11e0iar10chhp5].[cnt:학위:qk]' />
+              <text column='[federated.1x846420exkfjj11e0iar10chhp5].[pcto:cnt:학위:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='12'><![CDATA[<[federated.1x846420exkfjj11e0iar10chhp5].[none:학위:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='12'><![CDATA[<[federated.1x846420exkfjj11e0iar10chhp5].[cnt:학위:qk]> 건]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='12'><![CDATA[<[federated.1x846420exkfjj11e0iar10chhp5].[pcto:cnt:학위:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='5.9130978584289551' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1x846420exkfjj11e0iar10chhp5].[none:Calculation_1270859579141246988:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1x846420exkfjj11e0iar10chhp5].[cnt:학위:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='26'>전체건수</run>
+                <run>Æ&#10;</run>
+                <run fontsize='18'><![CDATA[<[federated.1x846420exkfjj11e0iar10chhp5].[cnt:학위:qk]> 건]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='4.6765055656433105' />
+                <format attr='mark-color' value='#ffffff' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>([federated.1x846420exkfjj11e0iar10chhp5].[none:Calculation_1270859579141234698:qk] + [federated.1x846420exkfjj11e0iar10chhp5].[none:Calculation_1270859579141246988:qk])</cols>
+      </table>
+      <simple-id uuid='{0D0560E4-3535-4AF3-AF21-62FABF4602A2}' />
+    </worksheet>
+    <worksheet name='키워드_Top10'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1(keyword_top10)' name='federated.0fub4i70htv2pn11qns6l0kskn68' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fub4i70htv2pn11qns6l0kskn68'>
+            <column caption='Count' datatype='integer' name='[count]' role='measure' type='quantitative' />
+            <column caption='Keyword' datatype='string' name='[keyword]' role='dimension' type='nominal' />
+            <column-instance column='[keyword]' derivation='None' name='[none:keyword:nk]' pivot='key' type='nominal' />
+            <column-instance column='[건수]' derivation='None' name='[none:건수:nk]' pivot='key' type='nominal' />
+            <column-instance column='[count]' derivation='Sum' name='[pcto:sum:count:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[count]' derivation='Sum' name='[sum:count:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[건수]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0fub4i70htv2pn11qns6l0kskn68].[none:keyword:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot; 빅데이터&quot;</bucket>
+              <bucket>&quot; 머신러닝&quot;</bucket>
+              <bucket>&quot; 데이터엔지니어&quot;</bucket>
+              <bucket>&quot; 딥러닝&quot;</bucket>
+              <bucket>&quot; Python&quot;</bucket>
+              <bucket>&quot; AI(인공지능)&quot;</bucket>
+              <bucket>&quot; 웹개발&quot;</bucket>
+              <bucket>&quot;연구원&quot;</bucket>
+              <bucket>&quot; 데이터시각화&quot;</bucket>
+              <bucket>&quot; 백엔드/서버개발&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.0fub4i70htv2pn11qns6l0kskn68].[sum:count:qk]' />
+              <text column='[federated.0fub4i70htv2pn11qns6l0kskn68].[none:keyword:nk]' />
+              <text column='[federated.0fub4i70htv2pn11qns6l0kskn68].[none:건수:nk]' />
+              <text column='[federated.0fub4i70htv2pn11qns6l0kskn68].[pcto:sum:count:qk]' />
+              <color column='[federated.0fub4i70htv2pn11qns6l0kskn68].[none:keyword:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='16'><![CDATA[<[federated.0fub4i70htv2pn11qns6l0kskn68].[none:건수:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontsize='16'><![CDATA[<[federated.0fub4i70htv2pn11qns6l0kskn68].[none:keyword:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontsize='16'><![CDATA[<[federated.0fub4i70htv2pn11qns6l0kskn68].[pcto:sum:count:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='10' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{22BBDF13-101D-42DD-8462-A6C9B59AF84C}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='156'>
+    <window class='worksheet' maximized='true' name='채용 별 관련 IT업종 유무'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1qhxzvu0cweqos1e2j8aj0hb028v].[none:업종_분류:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.1qhxzvu0cweqos1e2j8aj0hb028v].[cnt:업종_분류:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1qhxzvu0cweqos1e2j8aj0hb028v].[none:업종_분류:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{11233C94-3F9B-490F-BD19-37887BED2B3D}' />
+    </window>
+    <window class='worksheet' name='키워드_Top10'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0fub4i70htv2pn11qns6l0kskn68].[none:keyword:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0fub4i70htv2pn11qns6l0kskn68].[none:keyword:nk]</field>
+            <field>[federated.0fub4i70htv2pn11qns6l0kskn68].[none:건수:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8FAB4110-1DEE-4F0A-9668-8B18F53E0D3E}' />
+    </window>
+    <window class='worksheet' name='채용 별 최소 조건'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1x846420exkfjj11e0iar10chhp5].[none:학위:nk]' type='color' />
+            <card param='[federated.1x846420exkfjj11e0iar10chhp5].[none:학위:nk]' type='highlighter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1x846420exkfjj11e0iar10chhp5].[none:학위:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D06A1B2F-89F6-4E82-8835-DA250CB5ADD3}' />
+    </window>
+    <window class='worksheet' name='설립연차별 채용 기업 수'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1dnmbal0ouibn20zq52570cv0qeo].[none:단위별_설립연차:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1dnmbal0ouibn20zq52570cv0qeo].[none:단위별_설립연차:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1A67E7E1-1EEB-46D8-A85D-3D8D9D0DF87C}' />
+    </window>
+    <window class='worksheet' name='채용 경력 건수'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1udk58k1nulwbh10bttwe12sq179].[none:경력:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.1udk58k1nulwbh10bttwe12sq179].[sum:count:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1qhxzvu0cweqos1e2j8aj0hb028v].[none:단위별_설립연차:nk]</field>
+            <field>[federated.1udk58k1nulwbh10bttwe12sq179].[none:경력:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C616B6A7-9BA6-4E95-BE47-99CBEE5BA1AE}' />
+    </window>
+    <window class='worksheet' name='채용 기업규모 수'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1chyiw50ygyazu13w4ut4095ty4e].[pcto:sum:기업명:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1chyiw50ygyazu13w4ut4095ty4e].[none:기업규모:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D6163E2F-78FF-4E33-B735-CEC0C202EFF0}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='설립연차별 채용 기업 수' width='192'>
+      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
+      a9//B0lNab/f76ABAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='채용 경력 건수' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAARTElEQVR4nO3deXCUdZ7H8Xd3J+nOHZJ0CJcJhltAkUM5VmY8IlA1WBay4qy7o666gzXW
+      ru5WOUO5NbqlW7NTxepYVjHrMcoMW7qWzlIixzqJBgl3gglEEiCdQO476c7RR7qfZ/8IRDlC
+      jk7383Se76sqhQlJ96elP3me5/f8fs9jUlVVRQiDMmsdQAgtSQGEoUkBhKFJAYShSQGEoUkB
+      hKFJAYShSQGEoUkBhKFJAYShSQGEoUkBhKFJAYShSQGEoUkBhKFJAYShSQGEoUkBhKFJAYSh
+      SQGEoUkBhKFJAYShSQGEoUkBhKFJAYShSQGEoUkBhKFJAYShSQGEoUkBhKFJAYShSQGEoUVp
+      HUAYm6IomEymwc8DgQAWiwXgqq+HihRAaEZVVfbs2UNubi4VFRX09fVRU1PDvHnzUBSFpUuX
+      hjyD7AIJTaiqSl5eHtOmTcPhcKCqKqmpqYN/pqSkhCWHFEBoJjExkdraWi5cuEBUVBQej4e9
+      e/eybds2HA5HWDKY5CZ5QiuBQACPxwOA1WrFZDJd9XlUVOj30KUAwtDkIFiEnaqqlJeX09bW
+      xsKFC2lsbCQzM5O0tDQqKiro6upi0aJFWCwWbDZbSLPIMYDQRGZmJh6Ph9raWpqamjh8+DCq
+      qjJ58mTcbjd79+6lpqYm5DmkACLsTCYTkyZNwmw2ExcXx5w5c0hISEBRFI4fPw7ArFmzMJtD
+      //aUAghNNDc3k5OTw4wZM8jPz0dVVcxmM+np6TQ0NFBRUUFMTEzIc8hBsDA02QIIQ5NRIBFW
+      qqpy8OBBHA4HW7ZsIRAIcODAAZxOJ4sWLaKiooJZs2ZRVVXFqlWrSE5Oxm63hyyPbAFEWJlM
+      JrKzswEwm80kJSWxfv16Fi9ezLJly5g9ezZmsxm/309FRQVlZWUoihKyPFIAEVZXDjmnT59O
+      c3Mzfr+f0tJSFi9eTGFhIXa7nWXLlrF69Wqio6NxuVy43e6Q5ZFdIBF2brebtLQ00tPT8Xg8
+      zJ8/H5vNht1up66ujvT0dDIyMpg+fTqXLl0iLi4uZFlkFEgYmmwBxJioioKiKHh7emhzOGit
+      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
+      05dAziYwyTFAxEvLzuZv3nknotcLtDX14SgP0yUUbXZY/AuwDIyiSQEmgNvWr2fdtm1axwhK
+      4YGa0B8Mm6Nh4T9AbMb3XwrtM4pwMJvNrPvVr7jj4Ye1jjJmZUUtdDtDOEHOZIZ5P4OM5Vd9
+      WQowQUTHxvJ3H3zAvAce0DrKmHj6/Hx7uDF0TzDzIcj+yUARfkAKMIHEJifz1K5dTFmwQOso
+      Y3L8q7rQnBm+ZR3M/dvr3vwgBZhwEjMy+MW+fWTOn691lFG7VOmktmqcJ8hNWQPznxrY/78B
+      KcAElJqVxT/m5ZF9111aRxkVJaByoqBh/A6GszbA7S9AVOyQ3yIFmKBSpk7l+QMHuG3dOq2j
+      jErJ0UY8ff7gHsRkhjmPw4JnwHLzu9RLASawuJQUnv3sM1Y+8QQmc2T8U3e2eviuuGXsD2Cx
+      wvy/h1l/DebhL3wYGf9XxJjFxMXx+Hvv8dMdO4iJkNstnSgY4+XUE6bDin+7PNozsjUGUgAD
+      MFssrHn2Wf75m2+YsWSJ1nGGdfZUK21NfaP4CRNMXQsrfwOpC0b85gcpgKHccued/FN+Pj96
+      /nmiL6850KOAXx35XWVsabBwKyz5F4gZ/e2kZDq0QdWVlvI/zz9P5aFDWke5oSm3JPDL/1xD
+      jG2I/XhzNEy7F+Y+DtaUMT+PbAEMavrtt/PC11/zsw8/1OVs0saanqEXzU9aAHe9NjCpLYg3
+      P8gWwPBUVcXv8XDsj3/kq9/9jqbycq0jDVr6V1N4+qWl338hbRHkPDIwnXmcFtJLAcSgQH8/
+      Z/buJW/7dqqOHEFVtF2wHp8Uzb/uyCV57uqBuTyT5t1wOkMwpADiOgG/n/bqaoo/+YRjO3fS
+      cuFCWJ8/KiaGW1evZtmjj7Js88PETkof9zf+FVIAMaQru0c1p05xvqCA8r/8hbrSUtxd43vH
+      R5PZTGJGBreuWsW8++5jfm4uadnZWKJCfwcvKYAYMSUQoK+zk4ayMqqOHqWpooKWCxdwNTbi
+      bGzE7/UO+xjWxESSJk/GnpODPSeHyfPmMWvNGuw5OVgTE8N+kSwpgAiKoij4envxdHfjcblw
+      O514XC78Xi+e7m6iY2OJT00lJi4Oa0IC8WlpA/+tk7PSUgBhaHIeQBiaFEAYmhRAGJoUQBia
+      FEAYmhRAGJoUQBiaFEAYmhRAGJoUQBiaFEAYmhRAGJoUQBiaFEAYmhRAGJoUQBiaFEAYmhRA
+      GJoUQBiaFEAYmhRAGJoUQBiaFEAYmhRAGJoUQBiaFEAYmhRAGJoUQBiaFEAYmhRAGJoUQBia
+      FEAYmhRAGJoUQBiaFEAYmhRAGJoUQBiaFEAYmhRAGJoUQBiaFEAYmhRAGJoUQBiaFEAYmhRA
+      GNr/A6VB7D6db+gFAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='채용 기업규모 수' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAeE0lEQVR4nO3daXBc5b3n8e85vUutrbVvLclabFnygrGxIYmZhDjMhQu5YJhMwFMEyDoV
+      XIlDMalMkpoKVLGEDFw7QJUSUyQQUolDLrYhQDBbLhjbIt612GrJWq2tW1K3Wq3uPtu8EG7i
+      eGPcam39fKq6QK2jo+eRz6/P8vzPcyTDMAwEIUnJs90AQZhNIgBCUhMBEJKaebYbICQLna62
+      E/hVK/WVBYSlVJgY5tRQkNqKfCYNO4q/n46eQSyONGoXVzHc006/L4DJ6qC2dglWkzTtrRJ7
+      AGGGSLjyCrCMefGNnqLLb3C8+QT28W7+sOMPeLwKDmcmbrcbon4mwjr9w17cbjcO0yQjASUh
+      rRJ7AGGGSKSlZxI1m3ACXqAgN52OwTAbb7yeQUy0tx6gYziEt6+XbHcd0eAYH37wAZLFwtWl
+      yxPSKrEHEGaGrnFo/98w0nKwACAx4T3Nqzt38L9/9jgTEY2aJUvYcN3nWXPVWoqcoEpWJoIT
+      mM1mQpOhhDRLEuMAwkwz1AhRyYbNdPb7ajSMyWwlqijYbLYZacuMBEDXdWRZ7GyEuWdGtkpd
+      12fi1wjC/zfxsSwkNREAIamJAAhJTQRASGoiAEJSu6yR4H+8cmoYBpIknfN9SZLOeV8Q5prL
+      CkB/1wm8EQfV+Sk0eTqxpLowgoOMTcrUVOTQ1TtIdnENNe7c6W6vIEyrywpAUWk54d4R7BnZ
+      FOYEMDldTNhk3IZC26TB2nXX4PG0oWkuDMNA0zTiHW872j7IZFQ95/3sNAdVJa5z3m/vG6Uw
+      20mK3XLW+z1DAU77xgGQgKoSF640B6986OFzy0vJSJ0agZyMqrR0DiPLErVlOdgsZpo6h1E1
+      gxWVeXH1RZg7LiMABn1dHbR3+pAmh+kaValwpzE+Mkh/WKa8NIuDBz8iPceNyfTJWLfZHF/d
+      3fKqQnTD4P2j3ex4p5lv3nwl9RV5yLKE2XT2qYyuG/zh3Rb+7bOLWVFVcNb3ygqyKMnLBODv
+      J0+z491WvnvrVRzvHGbt0hIsFguhsMK2PzdyxxeXoWo6/3fHAX7wlasZGA0RiaqsXlIcV1+E
+      ueOytsq8kkqyixZhMpko1DRkk5mSfBeaARazidyCKFarddoaORlR2N/cx2hwkqKcdH7+Pzdw
+      qG2Av+xrIy8rlTVLirCYPwnb8NgEumFwqG2A5ZX5Z52LmEwyZ3Jpt5pRzzNKfdo7jkmWKS+Y
+      CorDaua1fR4GRoKU5qVPW7+E2XcZV4EkLFYbdrsdi8WC3W7HajFjMpuxWsxIkoTNZpvWE+Dg
+      ZJTsDAdVxS5SbGY6B8bISrNTWZxFWoqViKLFlh0JhNjxbjPfvGkVDpuF9w53XfDwKxzVyEi1
+      n/N+XlYq4ajK4OgE/b4g45NRNqxZdN5DLWF+mxf3A6Sl2GKf8JMRhSf+uI/7//s1WC1T79ks
+      JgzDoLH1ND1Dfr56XT1RVeOma2o42j7IS++18IVVFbjSHWet90S3l6VlOef5fVa+e+tVtHQN
+      I0kS37ttHRmpdurKc9F0UTy7kMyLANitZkJhheOnhtB0nbysVJo7h7HbzNSX58XCcVVtMVfV
+      Th2f//uf9vFf11axrq7kvOvsHQ4wMBLkq9fVn/M9SZJ4fb+HApcTd34GXn8Irz/EYc8AWWmO
+      2KGRMP/Nm4GwJ3bso8Dl5NoV5fzgK1fz2WVuFFXjN28cOe/yhgGc58P6tHecNz9q540D7Xzj
+      piuxWc//GRAIRbCYZTJSbbGXBITC0enrlDDr5sUeAGDj+lqOtA/S7xtHlmUUVcMXCHH9VZUA
+      hMIKh9r6OXOEUlmcRZ93nKGxqTuJClypVJdkY7eauaK6kOuuXIT8D+cpBS4nFvMnnwdlBZkM
+      jEycdR/DeCjK8sr8GeitMFNm5IYYVVXjvgwqCIkwbw6BBCERRACEpCYCICS1ywqArqlEFRXD
+      MIhEIgCoSoRwJIph6IQmQugzONmEoij4fL5YW3RdZ3R0FL/fj2EYGIZBMBjE5/Ohqp/UE0Wj
+      UbxeL16vl7GxMQzD4J133iEUSswUHMLcc1lnpkN9HXgjdmoK09l/vJ3Prb2CpqOHmQhLlJZk
+      4hsN4sgsYnF5waVXFqdIJMKWLVsIBAIoikJDQwPPPfccH3zwAYqicM899+ByuXj88cdxOp3k
+      5uby+OOPI0kSwWCQI0eOYBgGTz31FE8//TTPPfccNTU1pKSkJLztwuy7rAAUFLsJ9Y5gdWZS
+      kucCXSc1K5dSQ6EtLLFm+RUfV4PmTls16IV4PB7sdjtPPvkkTz75JG+99RYtLS38+Mc/pru7
+      m0OHDvH1r3+dF198EUVR2LRpE9FoFFmWSUtLY/369QSDQRRF4fXXX6evrw9VVVGUxEzFJ8wt
+      l1UN2ulppbXTh92i09raioKZsG+Q3rDMkooc9u3fS17J4mmtBr2QgoICTpw4wW9/+1uam5vJ
+      zc1l/fr1bNmyBVVV+fnPf05+fj4nT57kRz/6EVu2bMFqtSJJEp2dnbz55pv09fXx8MMPs2zZ
+      Mt59913MZjMWi+XSv1yY/4wZoChKQtff29trvPzyy8b9999vvPHGG8Ytt9xihEIho7u727jr
+      rruMtrY249ZbbzX6+/vP+dlf/OIXxsTEROzrp59+2hgZGUloe4W5Y94PhIXDYbZs2cLg4CCl
+      paU8+uijNDQ08Nprr6GqKps3b6apqYldu3ZRWlpKVlYWv/zlL2N7p40bN7J9+3YyM0V9TzKa
+      9wEwPj7H0HUds9mMLMsYhhG72mM2m9F1HU2bKpmWJAmz2Rwr125sbKS9vT32tSzLfPGLXyQr
+      Kysh7RXmlnkfAEGIhxgIE5KaCICQ1Ob1ccn+/ft56aWXqKmpYdOmTWzfvp22tjYAli1bxr33
+      3htb1jAMfv3rX5Odnc2tt94KwJ49ezh27BibN2/m7bff5sCBA9x3333IsszevXvZsGGDmNto
+      gZu3e4BgMMgjjzzCXXfdRVdXF2+99Ra33XYb3//+96mqqsLv95+1fGNjI/v27eO9994DwOv1
+      8uKLL/L+++8TDAb585//TGVlJS+//DKvv/46JSUlYuNPAvM2AA6HgyVLltDQ0EBbWxt1dXXk
+      5+dTUFDABx98wKZNm2LLhsNhnn32We6//35gam+wbds2vve972G325EkCU3TGB8fx+/3Mzo6
+      yu7duzl48OBsdU+YIfM2ABMTE5w+fZo777yT2tpampubAfjb3/5GbW0teXmfTF71wgsv0NfX
+      R0NDA/v37+ePf/wjb7zxBjt27ODYsWPs3buXu+++G0VRsFqtDA4OUlNTQ0NDQ+zyqbAwXdY5
+      gKpEiGoSDpuZsdFRnBlZ6JEQYU0m3WljxDdGpsuFSU7cIUQkEmF0dBSLxYKqqvh8PhRF4YUX
+      XuDBBx8EpuqETp06xY033shVV13F4OAgw8PDfOYzn2Hp0qWoqsrBgwepq6ujtLQURVFQFIVQ
+      KBQbUxAWtssKgG+wF1/YSpEjSrdfwTzsRw2NEo0a5OSlEYlqDAciLFlUNN3tjcnJyeEnP/kJ
+      f/rTn6iurub2228nEAhwww03UFpaCkyNP4TDYQoLCyksLGRsbIzJyUlKSkooKSlB0zQ2bdpE
+      UVERhmEQCoX4whe+wIoVK2hoaOCee+45q55JWHgubyBMC9PRO4I1OoGrahHdrR7MNgtZuoJH
+      k1ldXUW75ySVlVWxkVrxaSrMRZcRAIPOE0dp7R5h2eIyTvUMkFdSQdTXzWjYxJLybNq6TlNY
+      VktF0dRMamIkWJir5kQphKHpRH2TiW7GjDE7rZhSRDn1fDAnPpYNzSDU6b/0gvOEw50uAjBP
+      iANzIamJAAhJTQRASGoiAEJSEwEQkpoIgJDURACEpCYCICS1uAKgawq9PT1EVZ1QYJQhnx9D
+      V+nt6UMRz9IS5oG4RoJPd3hQU9LwtHeihgMYik5gLAWLxYano4/aqvM/n0sQ5oq4ApBTkEfT
+      yQ7CqoW8nHSyDIV2VWJ1RRmetrbYnKCXmhvUUM99Vu98puu6mFt0nogrABKgqSrF7komhzo4
+      ETZRW57Ngf37KF5U96nnBtWNhXXXlSzLYm7ReWJOVIPqUQ3/4cFEN2PGONzp2Aucs90M4VMQ
+      V4GEpCYCICQ1EQAhqYkACElNBEBIaiIAQlITARCSmgiAkNREAISkFmc1aJT2kycIhhXGRwbp
+      6fdi6FE8Jz1ENVENKsx9cdUC+bo8SOk5dLR3IOlRzJrOieAwWVlZeDp6WFrtnq52CkJCxBUA
+      S4qT4Z4unBm5WE1mMnWFDk2mOjuPsRFRDSrMffFVg0qAAbLJhD45iidsou7jatDS6mWiGlSY
+      80Q1aAKIatD5Q1wFEpKaCICQ1EQAhKQmAiAkNREAIamJAAhJTQRASGoiAEJSEwEQktoFA/Cb
+      3/zmkj9sGMZFX4Iw112wPuH48eN4PB6KiopISUk57zIB72lOnuomKjlJZZyxkEzNohy6egbJ
+      Lqmhxp2bsIYLwnS4aDHcq6++yvXXX4/D4aCsrOyc72fkFuMOhTBnuxkbOo3bpdAWMlh79TV4
+      PG1omktUgwpz2gUDsGTJEnJycohEInR2dp43AIamMBaRqEm10DMySH9Eprwki0OHPiIt2y2q
+      QYU5L65qUMMw0A0DkyyjqQqaIWExm4hGolhtViRJAkQ1qDB3xXk/gITp443cZLZw5vPeZrfF
+      2y5BmBEXDEDLh++w5yMPS5eWE5XTuP7z68Q1U2HBueA2PRnVcZfm4/dFsathwjPZKkGYIRfc
+      A2gaZGemoZstKFIK9plslSDMkAsGYNX69USiKnaHHfnj43xBWGguGABvfxvvvn+K2korLUNO
+      vvKvV89kuwRhRlzwHCA0PoHJBhaLmcH+kZlskyDMmAvuAWRzCqUleZgdDq79XPpMtkkQZswF
+      A1DgriCrQAVAks0YTD0VUhAWkgsGYMI/Qr/Xj9lsxmp3kupMOScAhq7S1tJMemEF5vAI3rCJ
+      6hIXx5vaqKqrJ9VqOu+6BWGuuGAAetq7SXeXMNjVQ/WKsvOeLIz0eJBdpbhSrbQNhEjRNZpP
+      jVO5uIKuU93U1pTHlr1oMRwLr3RalIPPDxcuhZAtFJe4ceek8uGRdj67tu6cRSIRhVF/L2MD
+      MmlOGykGeHUZuy0F2RiI3Reg6xev9tS1hVcNqmkLq8BvoYqrGE6NjHP0WCuZBW7kiWG8ETP1
+      ZdkcbmlnUe1K8jKmhs9EMZwwV4m5QRNABGD+EPVtQlITARCSmgiAkNREAISkJgIgJDURACGp
+      iQAISU0EQEhqIgBCUosrAGp0nI/2HaB7wMdgdztNJztRw+Mc/PtBApNiZjRh7otrXqCofwhb
+      bjkFrjQ8HV7S9DDHuyZZUreYzq5uamsWfaqCOH2BVU5+mgJAYW6IKwAmRzb2sUGaWn047GbM
+      SGiGhNlkRjL0Tz1btGEsvI1FlEPPD3EFQNM1xgPj5JVWYowPMqRaWObO5siho1QuXY4sTx1h
+      GYZx1jyh/0xaYJXDkiRdtL/C3CGqQRNAVIPOH+IqkJDURACEpCYCICQ1EQAhqYkACElNBEBI
+      aiIAQlITARCSmgiAkNTiKoUAGOprR7XlY4z34Q2bqHVnc7TZQ+XSFWSlWqejjYKQMPHVAkVD
+      DI6OYLOkoCGRQ5TjPYPUr1jGqY5uMmoWAcQeln0hxgKrnLxUf4W5I64A9Hha8Y0F0PUhCvPs
+      6BhInKnulJAkKVYVKV3kMUsLsW7yYv0V5o64AlC+dBWl6gRjfoNosB9vOIV6t4ujx1upql2G
+      JE2FQNf1WGXoeckLKwKSJF28v8KcIapBE0BUg84f4mNKSGoiAEJSEwEQkpoIgJDURACEpCYC
+      ICQ1EQAhqYkACElNBEBIanGVQkz6h2lq6yS3uAKCQ3jDJurLsznc1M6ipSvITbdPVzsFISHi
+      CoAtNZOsNAfhUAiwUGRVOdbnY9XqVbR7Osl2VsbmyVRV9YLrMRbgg7Iv1t/poGo67f1jaNq5
+      lSx5mSnkZDjQdIO23tHY3Kupdgvu/HSGRifw9I3ymfoSALqHAgQ/nszYJEuU5WdgNkm8dqCd
+      G9ZWYZKnCvsmwgo9Q+PYrSbc+enIksSHTb2UF2ZS6JqfpR/xzQ6tauTk5ROZnEBVNSKqhlXS
+      iSoRdMkUKwo789+LvRaSS/V1Ol4Ws5mS3HSKc9I41jHIr145iN1qxp2fQabTjizLmM0mSvPS
+      cedn4M7PoGH3QRpbTnOobZCjHUOxdeVlOWPLHGob4L0jXYDE3uO9wNS/3dhEhH9/6QCZaXb6
+      vOP8avchkCSaOr34AuEZ6XMiXnHtAdRIkPaOboorapBCXnyRVOpKsjjW7KFqaX2sJPhS1ZG6
+      tLCqQYGEh9oXmOTQyX7GJyPUlObw+VUVHG4boLXbS0luOqtqCgHIcE4dhuqGgW4Y5LmcSJJE
+      58BYrI1Oxyc3LjkdVqKqfs6/3bGOIRYVZVGck0ZRThr/8Z+tvHu4i35fEGkG+psocQUgJSOH
+      VVfmTH3hSiPv4/dXXrEyzmYJl6JqOhWFmbGvJ8MKi0uzgamNVtV0zKZPNsqDJ/opcDnBgPHJ
+      6AXXG1FUcjJSz3m/ojCL94/2EFE0eocCZKU5uHZFGZ7ekWns1cyL+5ZIYXZYzTIOmwWAft84
+      uz44ybduvhIASZp6RRSVU/1jnOzxMTEZ5Rv/uoqJcBSb5fz/7Lpu0D3oZ21tyTnfK8vP4CvX
+      1bGvqRdJgu/fvhaL2cTapcUU5aQlrqMJJgIwT2U67ahaiLbeEcaCYZwOKx2nR3GlO6gucWGS
+      ZTTNoHcoQFlBBssX5SNJEumpNkJhhX7f+FnrMwyDps5hUuxWSvMzUNVzb+n8y4dt3LCumhSb
+      hcBElMBElENtAzgdVnIzz91rzAciAPPURFjhyR37+M6/rWHd0hL+ZW0V4ajKS++10Dkwxg3r
+      qrFaTIyMTxJRVFZUFsR+trLYRWWxC5ja8Pt9QY62DzI4OsFd16/AJEuc7xrWwEiQiKJiMX9y
+      aOXzhwiF5+/jsEQA5imHzcy1K8s50NJHTkYKkgThqIosS6ys+mRjX1SYxcG2fv7zaPdZP+90
+      WKZCIU2dT6yqKSQ3M+Wsk98z6z2jJDedvuFxUv/hpFmSJDKdc3O8RzcM9h7vwdANkCRK89J5
+      9cM2brqmhrf+3sHdN1whAjBfmWSZL62pvORyq5cUsXpJ0UWXcednnPOe1WLif93xmdjXkiTx
+      3VuvOme5zy13f4rWzo5gKMpr+zz8n7uvxWI2EY6qdA6MEYoo9A4HAFEKISxgumEgSxefoUME
+      QEgqhmEwGVFjU/GIAAhJRfv4Uq+hT0VABGCB03WdaDSKpmmxx9UqioKqqmc9ylVVVaLRaGzZ
+      cDjM3r17Z7Hl0+OfawzMJpnF7mzkj+ub4joJ1rUorU3NFFQsQZ704g2bqSzOoqmpjeq6pdhM
+      Il+zSdM0vv3tbzM6OkokEqGhoYEdO3awZ88eVFXlhz/8IevXrwfg+PHjdHR0EAgEeO+993js
+      scfYunUr11xzzSz34vLZLFP1aH870kVU0RifjDIZOfuSbXxPig+FcFfX0NnRiYGOQ9donhyh
+      tKIEj6ebusXl8axeiFMkEsHv9/PCCy/wyCOP4PF4OHToEM888wxHjhyhsbExFoCVK1eycuVK
+      Dh06xEsvvcTOnTtRlPl7fR/AYbPw4L2fj32tqBpRRSMj1UZdxVThTlwBsNitdLf3sqhqEb09
+      PaQbCqc0GWdqOiZjMLbbPfPfCzHUhVcOPRc2HrPZTH5+Phs3bkTXde677z7Wr1/Ppk2bUFWV
+      bdu2xdq5f/9+Dh8+jM/nY/v27Wiaxl//+tc50Y/p9N/+yxIAbrq6CkVR4guAf6CXIb8fedCH
+      HA1yKmyivjyHA/v3U754xVlPS7/o1IjGwppJWZZlLBbLbDeDnp4exsfH2b17N88//zw7d+5k
+      165dvPLKK5w6dYqGhga2bt0KQHl5OSdOnOCnP/0pkiTh9/tZs2bNnOhHIom5QRNgrswNGo1G
+      +drXvobNZmNgYICtW7fy+9//nubmZiYmJvjGN77BzTffDEBHRwcPP/wwv/rVr2a51TNLBCAB
+      5koAABRFIRAI4HA4cDgcGIbB2NgYZrOZtLS02CBRJBJh586dZx2qZmRkcP311y/oqd5FABJg
+      LgVAOFskEqGlpQVVVamvrxcBSAQRgLlr165dfPTRR2iaxujoqCiGE5LLjTfeSFVVFY2NjfT1
+      9YkALESBQIAnnngi9pyyjRs3smLFCgDGxsZ4/vnnURSFO++8k/z8fDRN47nnnqO6upqrr76a
+      3/3ud7hcLm666SY8Hg+GYVBTUzObXZo2uq7z1ltvxcZAxFDtAuRwONi4cSO33347hw8fPuvw
+      87HHHiMzM5OKigoeeughDMPgnXfe4c0332Tv3r00NjZy+vRp9uzZQ29vLzt37qS0tHQWezO9
+      xsbG+Na3vsW2bdv4y1/+IgKwEFksFurr63E6nWRmZlJbWxv73rp169i7dy9vv/02q1evJhAI
+      sHv3br75zW/Gnudmt9uxWq3s37+fwsJCnn32WYLB4Cz2aPq88sor3HHHHdx9993ccsst4iQ4
+      EebCSbBhGDzwwAPcdtttrF27Nvb+o48+Sk5ODg6Hg5aWFpxOJ62traSnp9PR0cG2bdt49dVX
+      cTgcwNQI8bXXXovX62Xz5s2z1Z2EEXuABWpwcJCuri7WrFkDwJ49e+jv78fj8VBaWkpZWRnt
+      7e18+ctf5t5776W+vp7S0lJcLhff+c53UBSFDRs2IMsybrebSCQyyz1KjPiqQdUop3r6qSx3
+      4+3vxhc2UV3q4tjxNqrr6kmxmi69EiEhTp48yQ9+8IPYhFWnT5+moqKCn/3sZzz11FOoqsqD
+      Dz5IZeXUbZXFxcW43W7S09Px+/2UlZVRUlLCV7/6VXbt2sUDDzwwm91JmLgOgZTJIK2d/dQv
+      rqC5tY0UXSNoMVFRWkx3j4/amnJgqiz3H+uC/pmuaAQOD11uM+YchzsdW/78nCYk2cRXDepw
+      kmozgzF14pViwLAuY7elIBsDsRswdP3i1Z76Apwc98wlSGFuOHjwIFu3biUSiXDPPfewYcMG
+      IM4AhPxD9PR0o0hWrHqYnoiJ5WUuPmr8iEW1K2O7X8MwLn4SrC+sjWVqYtr4hljGR8fpau6a
+      phbNvor6ClLPM+XiTMnPz48FYPPmzXzpS1/CZDLFOzdoHtdee2ZG0GIqPv6/dety42utwFDX
+      EDu3vTzbzZg2m376P2Y1AMXFxWzZsoXGxkYeeuih2CG5uAokJAWTycQTTzzB008/zfbt22NX
+      tUQphJAUXnzxRUwmE5FIBE3TCAQCbN++XewBhORw3XXXoes6VquVZ555htTUVJYvXy72AEJy
+      KCgo4I477jjrvRtuuEHsAYTkJvYAwrzx4a69BHyBaV3ntAdACY1xpMlD5dLlZKVaL/0DgvAp
+      HX3vCP0d/dO6zmk/BOruHaB+RR0DPd2XXlgQZllizgEW3kMfhQVq2gPgLimk6Vgzhe65++AE
+      QThj2s8BLCkZXLl66mmFZ4rhLlUQZ2CAZQHNPSNzyQLASzGZZdJc8/fpi//MZJbj/pukZKSS
+      lj29f5OE3hGm63ps45+vD1JOFPE3Odts/T0Sehn0TIcu9aT4ZGMYhvib/BNJkmKvGf29M3FP
+      8EzR1SgtTceYiGhY01ysrK0Cw8DvD5CRmQFEOfrRUew5RRTlOHGkpjHQeZJJUzrF2amY7elY
+      FthNbFo4wOHjJ9B0yMwrpjTbRvOJDnKKyklLsZBqlWhqbiPPXUm6w0RaagrtJ1pw5JSSZpdJ
+      T0uf7S4kiEHnyeaFNRKsqWEwOSgpLsKkKkR1Hd9AL6e6Ojk9PIaBleWrV2PVJhkZ8aLpEUbG
+      ITLUwQeNhwgvrNsSAJgMhbCnZVJSmI8aCWNzuli5fCnDPe2caO/GlpLBqtVXEh0fxev1Eg6N
+      oVsy6G45yN+Pts528xNIQzenLayRYF3V6D3VwtvvDFBdv5JF0QhRyU5hQSFEQ2hkYtIVQhGV
+      NIsFsJNqiyJnV3OlTceyoD4Opmi6RtuRffQMTrDy6s8S9PVyrH2UypIiuoYCYBhEQ2Ookh0z
+      YewpGSgTvVTUXQlqeLabn1ASC6wUwmK1kZlbyNUFZUQwYzOi9PV2MjERIjU1ldSsTFqPN1Gz
+      7AoCw1MDdSP93Rw8+SGOrAJuv+XmWe7B9Eu1msgqWUxJhYzssJKe6cJi9NPbP0RaVh6TwRGa
+      PX3UL6unr6cTCejtaOGD/QfIKa/j1i/lz3YXEkQmEhzm/wHkztMlVGaavgAAAABJRU5ErkJg
+      gg==
+    </thumbnail>
+    <thumbnail height='192' name='채용 별 관련 IT업종 유무' width='192'>
+      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
+      /wLTkndy92K1bgAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='채용 별 최소 조건' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='키워드_Top10' width='192'>
+      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
+      /dXvP0PH0V0EelqJRwLEw36Obn6WaKCPvtYarM50arY+T/uRHWTPWkjO7MVoapS2ym04swqI
+      BvuJRwJYHWlY7O4R9f7d/SGuv3AeFpOC0FVi7/0QkaTz06ou+PqzHfxpl5e3q4NcUuLgiZ1e
+      fvGeh+cr/BSlmynONNMX0rjnjy3oBpTmWXj1kJ+qjhgPv+9hyQwbv9zooTTXSrYzSY4IZgfK
+      7EtHtZcEfP3n3x7gg+iGzpb6jTxT8edxOTt8MqU5Zdyz+vMsyFuExx/myz99jVg8Oa7LQgjC
+      vh7ESTFyFJMZm3tkw5cEfOtvLuPi8mIMbyOhx25LmtXXEIK+kI7LKvN/X+/mE6vSmZVlJs2m
+      sL4yQF1vnK9dnc3PNvSiG5Bul7nvsmwAdEPwpb+0sWqmnberg/zw9gIW5CfnzK+UXozzsy8j
+      DaMxFELQ09lOVcX+88MXaCQUWeHK0mtZUricFw89y7aGTUTUc1sCFKbN4KZFt3H5vKuwmhKx
+      MPfXdCat80NiD+LMOPPQ6wLYXd3OxeXFiSgOSXR5kCWJvc0RHtnsoSjdzOJCKz1BnX98phVP
+      SOPXny6iojWKSZZYNctGTVcMVRccaI2wpS7MNQtcfOqCdOp6Tq+9Gi+ErxWjuxqlcNmp94Sg
+      o6WZIwf3Y+j6+S8Ax8l25vC3F9/PLeW3s61xMzubttLua0cb44knm8lOSU4pl5VcyUWzLsVh
+      GRqa40jT1AzLAnCkqRdhGGite5L6HiEE6xa5uLrMyc/f62VDTYgbFrl47LPFbK0L85stfcgS
+      VHbEeO1wgKhqcM0CF9vqw3zignRmpCdcU3JcCjZzcqNray27ThEAIQSdbS0cObAPY2CmnTYC
+      AIlRND+tkDuWfYLbltxFm6+Fut5j1HuO0R3owBvxElHDmGUzdrODLEc2hekzmJtdSmnOfLKd
+      ucin0bwYhqC15/RGsalAnz+C1+vFcgabv7OhrV/l5xs8FGWa2Ncc5abyNL7zahcZdoUmr8ry
+      IhtfuDRxOmtTbYijXVFKc63UdPei6idW2v9yQ/KTjOituxEX/u0QTZq3t4fqAxWDnR/OQzvA
+      ZBCNa3zpR89wYNf7KCYLzsx82qt3IpvMzLvoI5itjoQF19uJMAxKVt9IU8UGcucuw5mZj6e5
+      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
+      Tjf/AIk8XIQvARsLAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
